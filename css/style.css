@@ -325,4 +325,43 @@ img {
 body {
   background: #070506 url("../img/main-bg.png") center no-repeat;
   background-size: cover;
-  min-height: 100vh; }
+  height: 100vh; }
+
+.header {
+  padding-top: 7.58rem; }
+
+.logo {
+  margin-right: 5.1rem;
+  transition: 0.5s; }
+  .logo:hover {
+    transform: scale(1.1); }
+
+.nav {
+  display: flex; }
+  .nav__wrapper {
+    display: flex;
+    align-items: center; }
+  .nav__item {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 0.9rem;
+    transition: 0.35s; }
+    .nav__item::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #ffffff;
+      margin-top: 1rem;
+      transition: 0.3s ease-in-out;
+      transform: scale(0); }
+    .nav__item:hover::after {
+      transform: scale(1); }
+    .nav__item:last-child {
+      margin-right: 0; }
+
+.hero {
+  min-height: 36rem;
+  color: #ffffff;
+  padding-top: 6.5rem; }
