@@ -308,6 +308,13 @@ template {
   max-width: 1060px;
   margin: 0 auto; }
 
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/ProximaNova-Black.woff2") format("woff2"), url("../fonts/ProximaNova-Black.woff2") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -325,9 +332,7 @@ img {
 body {
   background: #070506 url("../img/main-bg.png") center no-repeat;
   background-size: cover;
-  height: 100vh; }
-
-.header {
+  height: 100vh;
   padding-top: 7.58rem; }
 
 .logo {
@@ -346,9 +351,11 @@ body {
     text-decoration: none;
     font-size: 1.2rem;
     margin-right: 0.9rem;
-    transition: 0.35s; }
+    transition: 0.35s;
+    position: relative; }
     .nav__item::after {
       content: '';
+      position: absolute;
       display: block;
       width: 100%;
       height: 2px;
@@ -364,4 +371,20 @@ body {
 .hero {
   min-height: 36rem;
   color: #ffffff;
-  padding-top: 6.5rem; }
+  padding-top: 5.5rem; }
+  .hero__subtitle {
+    font-size: 2.85rem;
+    line-height: 100%;
+    font-family: 'Proxima Nova', sans-serif; }
+  .hero__title {
+    margin: 0;
+    font-size: 4.5rem;
+    line-height: 6.5rem;
+    font-weight: 900;
+    font-family: 'Proxima Nova', sans-serif;
+    margin-bottom: 1.3rem; }
+  .hero__description {
+    font-size: 1.28rem;
+    max-width: 40.85rem;
+    line-height: 155%;
+    color: #AFAFAF; }

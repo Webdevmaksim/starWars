@@ -2,8 +2,7 @@ body
     background: #070506 url('../img/main-bg.png') center no-repeat
     background-size: cover
     height: 100vh
-.header
-    padding-top: 7.58rem
+    padding-top: 7.58rem 
 .logo
     margin-right: 5.1rem
     transition: 0.5s
@@ -20,8 +19,10 @@ body
         font-size: 1.2rem
         margin-right: 0.9rem
         transition: 0.35s
+        position: relative
         &::after
             content: ''
+            position: absolute
             display: block
             width: 100%
             height: 2px 
@@ -37,5 +38,23 @@ body
 .hero
     min-height: 36rem
     color: $light
-    padding-top: 6.5rem
+    padding-top: 5.5rem
+    &__subtitle
+        font-size: 2.85rem
+        line-height: 100%
+        font-family: 'Proxima Nova', sans-serif
+    &__title
+        margin: 0
+        font-size: 4.5rem
+        line-height: 6.5rem
+        font-weight: 900
+        font-family: 'Proxima Nova', sans-serif
+        margin-bottom: 1.3rem
+    &__description
+        font-size: 1.28rem
+        max-width: 40.85rem
+        line-height: 155%
+        color: $grey
+        
+            
     
