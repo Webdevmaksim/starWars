@@ -387,4 +387,30 @@ body {
     font-size: 1.28rem;
     max-width: 40.85rem;
     line-height: 155%;
-    color: #AFAFAF; }
+    color: #AFAFAF;
+    margin-bottom: 2rem; }
+  .hero__opening {
+    color: #B02000;
+    display: block;
+    font-size: 1.28rem;
+    line-height: 150%;
+    margin-bottom: 0.5rem; }
+  .hero__date {
+    font-size: 1.71rem;
+    display: block;
+    color: #ffffff;
+    line-height: 150%;
+    margin-bottom: 3.28rem; }
+
+.button-play {
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(90deg, #FB641A 0%, #FC3309 100%);
+  border: none;
+  padding: 1.71rem 6.21rem 1.71rem 2.42rem;
+  border-radius: 300px;
+  outline: none;
+  transition: 0.1s; }
+  .button-play:hover {
+    cursor: pointer;
+    transform: scale(1.05); }
