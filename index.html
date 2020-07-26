@@ -6,6 +6,7 @@
     <title>Звёздные Войны: Промо Сайт</title>
     <link rel="icon" href="./img/main-icon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -42,12 +43,43 @@
                 <span class="hero__opening">Премьера
                 </span>
                 <span class="hero__date">19 декабря 2019</span>
-                <button class="button-play hero__button">
-                    Смотреть трейлер
-                </button>
+                <a class="button-play hero__button" href="https://www.youtube.com/watch?v=KVRBfWQgyuY" target="_blank">Смотреть трейлер</a>
             </div>
         </div>
         <!-- /.hero -->
+        <section class="sw-slider">
+            <div class="container">
+                <div class="sw-slider__wrapper">
+                    <h2 class="sw-slider__title">
+                        Предыдущие эпизоды
+                    </h2>
+                    <!-- /.sw-clider__title -->
+                    <div class="sw-slider__content">
+                        <!-- Slider main container -->
+                            <div class="swiper-container sw-slider__container">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide sw-slider__slide">Slide 1</div>
+                                    <div class="swiper-slide sw-slider__slide">Slide 2</div>
+                                    <div class="swiper-slide sw-slider__slide">Slide 3</div>
+                                    <div class="swiper-slide sw-slider__slide">Slide 4</div>
+                                </div>
+                                
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="sw-slider__button sw-slider__button-prev"></div>
+                            <div class="sw-slider__button sw-slider__button-next"></div>
+                    </div>
+                    <!-- /.sw-slider__content -->
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.sw-slider -->
     </main>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
