@@ -332,8 +332,8 @@ img {
 body {
   background: #070506 url("../img/main-bg.png") center no-repeat;
   background-size: cover;
-  height: 100vh;
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
 
 .logo {
   margin-right: 5.1rem;
@@ -444,16 +444,51 @@ body {
     text-decoration: none; }
 
 .sw-slider {
-  color: #ffffff; }
+  color: #FFFFFF; }
+  .sw-slider__container {
+    margin-bottom: 1.92rem; }
   .sw-slider__title {
     font-size: 1.4rem;
     line-height: 150%;
     margin-bottom: 1.7rem; }
   .sw-slider__slide {
-    padding: 2.15rem 2.15rem 1.85rem; }
-    .sw-slider__slide:nth-of-type(1n+2) {
-      background: url("../img/4.png") center no-repeat;
-      background-position: cover; }
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.15rem;
+    width: 17.85rem;
+    min-height: 14.28rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
+    z-index: -1; }
+    .sw-slider__slide:hover {
+      cursor: pointer; }
+      .sw-slider__slide:hover::before {
+        opacity: 1; }
+    .sw-slider__slide::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(64, 101, 255, 0.86), rgba(64, 101, 255, 0.06));
+      z-index: -2;
+      opacity: 0;
+      transition: opacity 0.2s ease-out; }
+    .sw-slider__slide::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(80, 80, 80, 0.86), rgba(80, 80, 80, 0.86));
+      z-index: -3; }
   .sw-slider__content {
     position: relative; }
   .sw-slider__button {
@@ -465,3 +500,9 @@ body {
       background: url("../img/left-arrow.svg") center no-repeat; }
     .sw-slider__button-next {
       background: url("../img/right-arrow.svg") center no-repeat; }
+  .sw-slider__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -4;
+    border-radius: 15px; }

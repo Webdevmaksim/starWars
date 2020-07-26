@@ -3,6 +3,7 @@ $(document).ready(function () {
         // Optional parameters
         loop: true,
         slidesPerView: 4,
+        spaceBetween: 20,
         // Navigation arrows
         navigation: {
           nextEl: '.sw-slider__button-next',
