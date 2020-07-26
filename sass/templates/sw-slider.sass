@@ -30,10 +30,10 @@
             left: 0
             width: 100%
             height: 100%
-            background: linear-gradient(0deg, rgba(64, 101, 255, 0.86), rgba(64, 101, 255, 0.06))
+            background: linear-gradient(0deg, rgba(64, 101, 255, 0.55), rgba(64, 101, 255, 0.55))
             z-index: -2
             opacity: 0
-            transition: opacity 0.2s ease-out
+            transition: opacity 0.3s ease-out
         &::after
             content: ''
             display: block
@@ -42,16 +42,17 @@
             left: 0
             width: 100%
             height: 100%
-            background: linear-gradient(0deg, rgba(80, 80, 80, 0.86), rgba(80, 80, 80, 0.86))
+            background: linear-gradient(0deg, rgba(80, 80, 80, 0.70), rgba(80, 80, 80, 0.70))
             z-index: -3
     &__content
         position: relative
     &__button
-        width: 2.2rem
+        width: 2.4rem
         height: 2.2rem
-        // border: 2px solid red
         position: absolute
         outline: none
+        &:hover
+            cursor: pointer
         &-prev
             background: url('../img/left-arrow.svg') center no-repeat
         &-next
