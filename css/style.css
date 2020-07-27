@@ -416,8 +416,9 @@ body {
   display: inline-block;
   margin-bottom: 4.2rem; }
   .button-play:hover {
-    cursor: pointer;
-    transform: scale(1.05); }
+    cursor: pointer; }
+    .button-play:hover::before {
+      transform: scale(1.2); }
   .button-play::after {
     content: '';
     display: block;
@@ -438,10 +439,25 @@ body {
     height: 5.64rem;
     border-radius: 50%;
     right: -0.5rem;
-    top: -0.5rem; }
+    top: -0.5rem;
+    transition: 0.3s; }
   .button-play__link {
     color: #ffffff;
     text-decoration: none; }
+
+.rating {
+  display: flex; }
+  .rating__label {
+    margin-right: 0.9rem; }
+  .rating__stars {
+    display: flex; }
+
+.star {
+  background: url("../img/solid-star.svg") center no-repeat;
+  width: 1rem;
+  height: 1rem; }
+  .star--e {
+    background: url("../img/empty-star.svg") center no-repeat; }
 
 .sw-slider {
   color: #FFFFFF; }
