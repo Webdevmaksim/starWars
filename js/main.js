@@ -3,8 +3,26 @@ $(document).ready(function () {
     var mySwiper = new Swiper('.sw-slider__container', {
         // Optional parameters
         loop: true,
-        slidesPerView: 4,
-        spaceBetween: 20,
+        //breakpoints
+        breakpoints: {
+          
+          0: {
+            slidesPerView: 1,
+          },
+          
+          700: {
+            slidesPerView: 2,
+            // spaceBetween: 10
+          },
+          900: {
+            slidesPerView: 3,
+            spaceBetween: 5
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 20
+          }
+        },
         // Navigation arrows
         navigation: {
           nextEl: '.sw-slider__button-next',
