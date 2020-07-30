@@ -55,4 +55,20 @@ $(document).ready(function () {
         }, 500);
         return false;
     });
+
+    //Tabs set up
+    $(function() {
+
+      let tab = $('a[data-toggle="tab"]');
+
+      tab.on('click', function(){
+        event.preventDefault();
+        $('.nav__item').removeClass('nav__item--active');
+        $(this).toggleClass('nav__item--active');
+
+        let tagret = $(this).attr('href');
+        $('.content').removeClass('content__active');
+        $(tagret).toggleClass('content__active');
+      });
+    });
 });

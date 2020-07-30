@@ -17,13 +17,18 @@
         <div class="container">
             <div class="nav__wrapper">
                 <div class="logo"><a href="./index.html"><img src="./img/logo.png" alt="Звездные Войны"></a></div>
-                <nav class="nav"><a href="#" class="nav__item">Билеты</a> <a href="#" class="nav__item">О фильме</a> <a
-                        href="#" class="nav__item">Трейлеры</a> <a href="#" class="nav__item">Отзывы</a></nav>
+
+                <nav class="nav">
+                    <a href="#home" class="nav__item tab nav__item--active" data-toggle="tab">Главная</a>
+                    <a href="#tickets" class="nav__item tab" data-toggle="tab">Билеты</a> 
+                    <a href="#about" class="nav__item tab" data-toggle="tab">О фильме</a>
+                     <a href="#" class="nav__item tab" data-toggle="tab">Трейлеры</a> 
+                     <a href="#" class="nav__item tab" data-toggle="tab">Отзывы</a></nav>
             </div>
         </div><!-- /.container -->
     </header>
     <main class="main">
-        <div class="hero">
+        <div class="hero content content__active" id="home">
             <div class="container"><span class="hero__subtitle">Эпизод IX</span>
                 <h1 class="hero__title">Скайуокер. Восход</h1>
                 <p class="hero__description">Фильм завершает невероятную историю семьи Скайуокеров, длящуюся уже более
@@ -33,9 +38,9 @@
                     декабря 2019</span> <a data-fancybox class="button-play hero__button"
                     href="https://www.youtube.com/watch?v=KVRBfWQgyuY">Смотреть трейлер</a>
             </div>
-        </div><!-- /.hero -->
-        <section class="sw-slider">
-            <div class="container">
+        
+            <section class="sw-slider">
+                <div class="container">
                 <div class="sw-slider__wrapper">
                     <h2 class="sw-slider__title">Предыдущие эпизоды</h2><!-- /.sw-clider__title -->
                     <div class="sw-slider__content">
@@ -181,7 +186,30 @@
                 </div>
             </div><!-- /.container -->
         </section><!-- /.sw-slider -->
-        <div class="button-up"></div>
+    </div><!-- /.hero -->
+    <section class="tickets content" id="tickets">
+        <div class="container">
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Осталось последний переписали рот о продолжил реторический даль свой безопасную переписывается семантика собрал своих силуэт но назад жизни, меня даже! Точках переписывается, даже всеми безопасную правилами рекламных текстами себя что залетают, родного если ручеек свою о алфавит мир, осталось предложения.</p>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.tickets -->
+    <section class="about content" id="about">
+        <div class="container">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ea architecto accusantium maiores in adipisci, placeat soluta laudantium quaerat enim eos aliquam et facere fuga excepturi ipsam quis possimus delectus rem! Porro illum rem velit natus quaerat aut, voluptates accusantium possimus iste illo cupiditate ad hic deserunt mollitia magnam ex labore. Nostrum, consectetur! Nisi pariatur quam eligendi sunt consectetur distinctio, sed dolorem odio maxime fugiat maiores deleniti fugit obcaecati voluptates cupiditate earum non ullam reiciendis recusandae optio porro nostrum, voluptate inventore! Sunt et veritatis, explicabo eligendi, est, veniam quidem aspernatur quas maiores cum cupiditate dolores. Temporibus optio ea illum ut.</p>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.about -->
+    <section class="teasers content" data-tab="4">
+
+    </section>
+    <!-- /.teasers -->
+    <section class="feedback content" data-tab="5">
+
+    </section>
+    <!-- /.feedback -->
+        <div class="button-up content"></div>
     </main>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>

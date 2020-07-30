@@ -329,6 +329,12 @@ body {
 img {
   max-width: 100%; }
 
+.content {
+  display: none;
+  transition: 0.3s; }
+  .content__active {
+    display: block; }
+
 body {
   background: #070506 url("../img/main-bg.png") top left no-repeat;
   background-attachment: fixed;
@@ -364,6 +370,8 @@ body {
       transition: 0.3s ease-in-out;
       transform: scale(0); }
     .nav__item:hover::after {
+      transform: scale(1); }
+    .nav__item--active::after {
       transform: scale(1); }
     .nav__item:last-child {
       margin-right: 0; }
@@ -542,3 +550,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   color: red; }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px; } }
