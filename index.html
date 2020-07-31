@@ -50,9 +50,9 @@
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <div class="sw-slider__slide">
+                                    <div class="sw-slider__slide" data-popup="true" data-movie="Эпизод IV: Новая надежда">
                                         <span class="sw-slider__year">1977</span>
-                                    <h3 class="sw-slider__subtitle">Эпизод IV:<br>Новая надежда</h3>
+                                    <h3 class="sw-slider__subtitle" >Эпизод IV:<br>Новая надежда</h3>
                                     <div class="sw-slider__rating rating">
                                         <span class="rating__label">Рейтинг</span>
                                         <span class="rating__stars">
@@ -209,8 +209,23 @@
 
     </section>
     <!-- /.feedback -->
-        <div class="button-up content"></div>
+    <div class="button-up content"></div>
+
+        <div class="popup__overlay">
+            <div class="popup__content">
+                <div class="popup__close">&times;</div>
+                <!-- /.popup__close -->
+                <h3 class="popup__title m-name">
+                    
+                </h3>
+                <!-- /.popup__title -->
+            </div>
+            <!-- /.popup__content -->
+        </div>
+        <!-- /.popup__overlay -->
+
     </main>
+
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>

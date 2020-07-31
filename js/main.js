@@ -71,4 +71,36 @@ $(document).ready(function () {
         $(tagret).toggleClass('content__active');
       });
     });
+
+    //modal
+    $(function(){
+      let modal = $('.popup__overlay'),
+          link = $('div[data-popup="true"]'),
+          closePopup = $('.popup__close'),
+          movieName = $('.m-name');
+
+      link.on('click', function(){
+        movieName.text($(this).attr('data-movie'));
+        modal.fadeIn();
+      });
+
+      closePopup.on('click',function(){
+        modal.fadeOut();
+      });
+      
+      //Close modal on overlay click
+      modal.click(function(e) {
+        if (e.target == modal[0]){
+          modal.fadeOut();					
+        }
+      });
+
+      // close popup on esc key
+      $(document).keydown(function(event) { 
+        if (event.keyCode == 27) { 
+          modal.fadeOut();
+        }
+      });
+    
+    });
 });
