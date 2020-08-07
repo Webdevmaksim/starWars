@@ -577,7 +577,9 @@ body {
   margin: auto;
   transform: translateY(20%);
   background: url("../img/pop-cover.jpg") center no-repeat;
-  background-position: cover; }
+  background-position: cover;
+  -webkit-filter: brightness(0.6);
+  filter: brightness(0.6); }
 
 .popup__close {
   position: absolute;
